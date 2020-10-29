@@ -2,7 +2,7 @@ FROM pmorris2012/openpose:latest
 
 RUN pip3 install tqdm
 
-COPY run_openpose /app
+COPY run-openpose /app
 
 WORKDIR /app
 
