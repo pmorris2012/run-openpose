@@ -23,7 +23,7 @@ In a terminal, use the `docker run` command to create a container from the `pmor
 - The image will be downloaded from [DockerHub](https://hub.docker.com/r/pmorris2012/run-openpose) automatically if it isn't already. 
 - Flags should be provided to set the input and output folders, container settings, and configuration arguments to give when calling `process_folder.py`.
 
-Here are some template commands that use different settings to run OpenPose and/or draw keypoints. Make sure to change the folder paths to the `/Input` and `/Output` `-v` volume mounts, and adjust settings using the configuration flags below:
+Here are some template commands that use different settings to run OpenPose and/or draw keypoints. Copy and paste these into the terminal, making sure to change the folder paths to the `/Input` and `/Output` `-v` volume mounts, and adjust settings using the configuration flags below:
 
 With face and hands, drawing new images/videos with both pose and black background versions
 ```
