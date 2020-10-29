@@ -19,3 +19,6 @@ docs/
 .DS_Store
 .project
 .pydevproject
+
+images/
+images_pose/
