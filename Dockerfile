@@ -1,5 +1,9 @@
-FROM ubuntu:18.04
+FROM pmorris2012/openpose:latest
+
+RUN pip3 install tqdm
 
 COPY . /app
 
-CMD ["/bin/bash"]
+WORKDIR /app
+
+ENTRYPOINT ["python3", "process_folder.py"]

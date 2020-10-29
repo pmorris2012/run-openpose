@@ -2,5 +2,5 @@
 
 docker build \
     -f Dockerfile \
-    -t image_name \
+    -t run-openpose \
     . \

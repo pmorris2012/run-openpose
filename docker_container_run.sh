@@ -1,12 +1,8 @@
 #!/bin/bash
 
 docker run \
-    -it \
-    --rm \
-    -p 7777:8888 \
-    -v /home:/home \
-    --gpus all \
-    --ipc="host" \
-    --name container_name \
-    ubuntu:18.04 \
-    /bin/bash
+    -v ~/Documents/dataset/Videos:/Input \
+    -v ~/Documents/dataset/Videos_Pose:/Output \
+    -it --rm --gpus all --ipc="host" \
+    pmorris2012/run-openpose \
+    --face --hands --draw_pose --draw_black_pose
