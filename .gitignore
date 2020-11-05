@@ -138,4 +138,4 @@ dmypy.json
 cython_debug/
 
 images/*
-#images_pose/
+images_pose/*
